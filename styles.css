@@ -1,0 +1,349 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 1.5rem 3.5rem;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #000;
+    color: white;
+}
+.nav-left,.delivery-pickup,.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.delivery,.pickup{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.kfc{
+    color: red;
+    font-size: x-large;
+}
+.delivery{
+    background: #1C1816;
+    border: 2px solid red;
+    padding: 0.2rem 1.5rem;
+    border-radius: 5px;
+}
+.delivery-text,.pickup-text{
+    text-transform: uppercase;
+}
+.pickup{
+    background: #1C1816;
+    border: none;
+    padding: 0.2rem 1.5rem;
+    border-radius: 10px;
+}
+.bucket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bucket-zero{
+    position: absolute;
+    top: 13px;
+    color: black;
+}
+.btn button{
+    background-color: red;
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 7px;
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.gallery-image img{
+    object-fit: cover;
+    margin-top: 90px;
+}
+.reorder-section button{
+    background-color: #EA002A;
+    color: white;
+    padding: 0.7rem 18rem;
+    border: none;
+    display: block;
+    margin:auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.explore-menu,.sellers-menu,.deals-menu{
+    width: 80%;
+    margin:2rem auto;
+}
+.explore-menu h1,.sellers-menu h1,.deals-menu h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.explore-menu hr,.sellers-menu hr,.deals-menu hr{
+    width: 5%;
+    height: 3px;
+    background-color: red;
+    border: none;
+}
+.explore-burger{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.explore-gallery{
+    width: 80%;
+    margin: auto;
+}
+.explore-burger .burger{
+    background: #1C1816;
+    border-radius: 50% 50% 3% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem 0.7rem;
+    position: relative;
+}
+.explore-burger .burger p{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.explore-burger .burger hr{
+    height: 4px;
+    background-color: #EA002A;
+    border: none;
+    font-weight: bolder;
+    width: 30%;
+    border-radius: 10px;
+}
+.burger span{
+    height: 20px;
+    width: 20px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+.burger{
+    transition: all 0.4s;
+}
+.burger:hover{
+    transform: translateY(-20px);
+}
+.menu-2,.menu-3{
+    width: 80%;
+    margin: auto;
+}
+.sellers-burger,.deals-burger{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+.sellers-burger .seller{
+    background-color: #1C1816;
+    padding: 0 0 0.5rem 0.5rem;
+    border-radius: 10px;
+}
+.red-dot{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.red-dot .dots{
+    width: 20px;
+    height: 30px;
+    background-color: red;
+}
+.seller h1{
+    font-size: x-larges;
+    font-weight: bolder;
+    margin: 1rem auto;
+    text-transform: capitalize;
+}
+.price-ribbon{
+    background: #EA002A;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    width: 30%;
+    margin-left: auto;
+}
+.price-ribbon h4{
+    font-size: large;
+    text-align: right;
+}
+.sellers-menu,.deals-menu{
+    width: 100%;
+}
+.d-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.deals-burger .deal{
+    background-color: #1C1816;
+    padding: 0 0.3rem 0.3rem 0.3rem;
+    position: relative;
+    border-radius: 10px;
+}
+.deal button{
+    background-color: #EA002A;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    top: 96%;
+    transition: all 0.3s;
+}
+.deal button:hover{
+background-color: white;
+color: #EA002A;
+transform: translateY(-5px);
+border: 1px solid #EA002A;
+}
+.my-image:hover{
+transform: scale(1.2);
+}
+.my-image{
+    transition: all 0.4s;
+}
+.d-image{
+    overflow: hidden;
+}
+.heart i{
+color: #EA002A;
+font-size: x-large;
+position: absolute;
+right: 12px;
+top: 12px;
+}
+.menu-4{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.first-menu .image,.second-menu .image{
+    display: flex;
+    justify-content: space-around;
+}
+.image-1,.image-2,.image-3,.image-4{
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+.image-1 img,.image-2 img,.image-3 img,.image-4{
+    border-radius: 1rem;
+}
+.image-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1C1816;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+.image-4 p{
+    font-size: x-large;
+}
+.image-4 button{
+    background-color: #EA002A;
+    color: white;
+    padding: 0.8rem 2.2rem;
+    font-size: larger;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.links i{
+    background-color: white;
+    padding: 0.7rem;
+    clip-path: circle();
+    font-size: x-large;
+}
+.links{
+    display: flex;
+    gap: 1rem;
+}
+.links a:nth-child(1){
+    color: #EA002A;
+}
+.links a:nth-child(2){
+    color: #000;
+}.links a:nth-child(3){
+    color: #3B5998;
+}
+.first-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.second-f{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+footer{
+    width: 100%;
+    margin: 5rem auto 0 auto;
+    background: #1C1816;
+    padding: 3rem 7rem;
+}
+ul li{
+    list-style: none;
+    width: max-content;
+    padding: 0.5rem;
+    font-size: large;
+    margin-left: 2rem;
+}
+.f4-image img{
+    display: block;
+    width: 65%;
+    padding-top: 1rem;
+}
+.second-f1,.second-f2,.second-f3,.second-f4{
+    width: 25%;
+    padding: 0.7rem;
+}
+.third-f{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.power-detail h5{
+    color: red;
+    font-size: larger;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
